@@ -1,0 +1,347 @@
+@import url(//db.onlinewebfonts.com/c/50cd2aad9c8f35800bb6beac3ad42f16?family=Azonix);
+
+/* Menu css*/
+body {
+  width: 100%;
+  font-family: "Azonix";
+  background: #006dc0;
+  background: -webkit-linear-gradient(to right, #ff7c11, #fc630b);
+  background: linear-gradient(to right, #ff7c11, #fc630b);
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+li {
+  display: flex;
+}
+
+.menu {
+  border-radius: 40%;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 80px;
+  max-width: 250px;
+  margin: 1rem auto;
+  text-transform: uppercase;
+  color: white;
+  line-height: 80px;
+  text-align: center;
+  transition: ease 0.5s;
+  font-family: "Acme", sans-serif;
+  font-size: 20px;
+  box-shadow: -3px 9px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.menu:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -50px;
+  bottom: 0;
+  left: 0;
+  border-right: 50px solid transparent;
+  border-bottom: 80px solid white;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  transition: cubic-bezier(1, -0.02, 0.26, 0.38) 0.5s;
+  z-index: -1;
+}
+
+.menu:hover {
+  color: #00c3ff;
+}
+
+.menu:hover:before {
+  transform: translateX(0);
+}
+
+ul {
+  margin-top: 50px;
+  display: block;
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+  width: 200px;
+  margin-left: 10px;
+}
+
+footer {
+  margin-left: 45%;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 480px) {
+  .copyright {
+    margin-top: 70px;
+    padding-top: 40px;
+    color: #fff;
+    font-size: 15px;
+  }
+}
+
+/*Home css*/
+.home {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.container {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: 30%;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  position: absolute;
+  justify-content: right;
+}
+
+.next {
+  right: 0;
+  left: 88vw;
+  border-radius: 3px 0 0 3px;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: rgba(34, 34, 34, 0.836);
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* Style des pages playstation, switch, xbox */
+.playstation {
+  background: -webkit-linear-gradient(to right, #1121ff, #0818a5);
+  background: linear-gradient(to right, #1121ff, #0818a5);
+}
+
+.switch {
+  background: -webkit-linear-gradient(to right, #f82020, #971301);
+  background: linear-gradient(to right, #f82020, #c01600);
+}
+
+.xbox {
+  background: -webkit-linear-gradient(to right, #39ff11, #029c0f);
+  background: linear-gradient(to right, #39ff11, #029c0f);
+}
+
+.panier {
+  background: -webkit-linear-gradient(to right, #da03ab, #45014e);
+  background: linear-gradient(to right, #da03ab, #45014e);
+}
+
+.container_playstation,
+.container_switch,
+.container_xbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 35px 25px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . ."
+    ". . . ."
+    ". . . .";
+  margin-bottom: 50px;
+}
+
+.card_playstation,
+.card_switch,
+.card_xbox {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.363);
+  transition: 0.3s;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.card_playstation:hover,
+.card_switch:hover,
+.card_xbox:hover {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.363);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.container_photo_playstation img {
+  width: 20%;
+  height: 30%;
+  display: inline-flex;
+  justify-content: center;
+  align-self: center;
+  color: white;
+  margin: 30px;
+  margin-left: 40%;
+  border-radius: 50px;
+}
+
+.container_photo_xbox img {
+  width: 20%;
+  height: 30%;
+  display: inline-flex;
+  justify-content: center;
+  align-self: center;
+  color: white;
+  margin: 30px;
+  margin-left: 40%;
+  border-radius: 50px;
+}
+
+.container_photo_switch img {
+  width: 20%;
+  height: 30%;
+  display: inline-flex;
+  justify-content: center;
+  align-self: center;
+  color: white;
+  margin: 30px;
+  margin-left: 40%;
+  border-radius: 50px;
+}
+
+.centered {
+  position: absolute;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.my_playstation_button,
+.my_switch_button,
+.my_xbox_button a {
+  border-radius: 8px;
+  float: right;
+  margin: 0 5px 5px 0;
+  cursor: pointer;
+  font-family: Verdana;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px 17px;
+  text-decoration: none;
+}
+
+.my_playstation_button {
+  box-shadow: 0px 10px 28px -3px #9fb4f2;
+  background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+  background-color: #7892c2;
+  color: #ffffff;
+  text-shadow: 0px 1px 7px #283966;
+}
+
+.my_playstation_button:hover {
+  background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+  background-color: #476e9e;
+  color: #ffffff;
+}
+.my_playstation_button:active,
+.my_switch_button:active,
+.my_xbox_button:active {
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+}
+
+.my_xbox_button {
+  box-shadow: 0px 10px 28px -3px #3dc21b;
+  background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+  background-color: #44c767;
+  color: #ffffff;
+  text-shadow: 0px 1px 7px #238330;
+}
+
+.my_xbox_button:hover {
+  background: linear-gradient(to bottom, #479e5a 5%, #78c27c 100%);
+  background-color: #479e4e;
+  color: #ffffff;
+}
+
+.my_switch_button {
+  box-shadow: 0px 10px 28px -3px #78050a;
+  background: linear-gradient(to bottom, #ed1515 5%, #eb4c4c 100%);
+  background-color: #ed1515;
+  color: #ffffff;
+  text-shadow: 0px 1px 7px #662828;
+}
+
+.my_switch_button:hover {
+  background: linear-gradient(to bottom, #a32b2b 5%, #c50606 100%);
+  background-color: #a12a2a;
+  color: #ffffff;
+}
+
+table {
+  width: 100%;
+}
